@@ -1,14 +1,13 @@
-// import { SignIn } from "./pages/SignIn"
-import { SignUp } from "./pages/SignUp";
+import { RouterProvider } from 'react-router-dom';
 import GlobalStyle from './styles/global';
+import { router } from './routes';
 
 function App() {
 
   return (
     <>
       <GlobalStyle />
-      {/* <SignIn /> */}
-      <SignUp />
+      <RouterProvider router={router}/>
     </>
   )
 }

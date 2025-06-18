@@ -2,8 +2,6 @@
 // import { useCallback, useRef } from 'react';
 // import getValidationErros from "../../utils/getValidationErrors";
 
-// import { FiLock, FiLogIn, FiMail } from 'react-icons/fi';
-// import { Link } from 'react-router-dom';
 // import * as Yup from 'yup';
 
 // import { FormHandles } from '@unform/core';
@@ -12,9 +10,8 @@
 // import { useAuth } from '../../hooks/auth';
 // import { useToast } from '../../hooks/toast';
 
-// import { Button } from '../../components/Button';
-// import { Input } from '../../components/Input';
-
+import { FiLogIn } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import logoImg from '../../assets/logo.svg';
 import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
@@ -103,10 +100,6 @@ export function SignIn() {
               // icon={FiMail} 
               placeholder="Email" 
             />
-    
-
-
-
 
             <Input 
               name="password" 
@@ -117,18 +110,15 @@ export function SignIn() {
 
             <Button type="submit">Entrar</Button>
 
-            {/* <Link to="forgot-password">Esqueci minha senha</Link> */}
-            <a href="forgot-password">Esqueci minha senha</a>
+            <Link to="forgot-password">Esqueci minha senha</Link>
           </form>
           {/* </Form> */}
 
-          {/* <Link to="/signup">
+          <Link to="/sign-up">
             <FiLogIn />
             Criar Conta
-          </Link> */}
-          <a href="/signup">
-            Criar Conta
-          </a>
+          </Link>
+        
         </AnimationContainer>
       </Content>
 

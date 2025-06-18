@@ -2,7 +2,6 @@
 // import { useCallback, useRef } from 'react';
 // import { FiArrowLeft, FiLock, FiMail, FiUser } from 'react-icons/fi';
 
-// import { Link, useHistory } from 'react-router-dom';
 // import api from '../../services/api';
 
 // import { FormHandles } from '@unform/core';
@@ -10,13 +9,20 @@
 // import * as Yup from 'yup';
 
 // import getValidationErros from '../../utils/getValidationErrors';
+// import { useToast } from '../../hooks/toast';
 
+import { Link } from 'react-router-dom';
 import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
 
 import logoImg from '../../assets/logo.svg';
-// import { useToast } from '../../hooks/toast';
-import { AnimationContainer, Background, Container, Content } from './styles';
+import { FiArrowLeft } from 'react-icons/fi';
+import { 
+  AnimationContainer, 
+  Background, 
+  Container, 
+  Content 
+} from './styles';
 
 //Interface
 // interface signUpFormData {
@@ -116,12 +122,10 @@ export function SignUp() {
         {/* </Form> */}
         </form>
 
-        {/* <Link to="/">
-          <FiArrowLeft /> */}
-          <a href='/'>
+        <Link to="/">
+          <FiArrowLeft />
             Voltar ao Login
-          </a>
-        {/* </Link> */}
+        </Link>
   
        </AnimationContainer>
       </Content>
